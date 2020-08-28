@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bulb-lights</title>
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+  <script src="/static/alertify.js-0.3.11/lib/alertify.js"></script>
+  <link rel="stylesheet" href="/static/alertify.js-0.3.11/themes/alertify.core.css"/>
+  <link rel="stylesheet" href="/static/alertify.js-0.3.11/themes/alertify.custom.css" id="toggleCSS"/>
+  <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1>Bulb-lights</h1>
+<div class="menu">
+  <button class="startButton">start game</button>
+  <div class="rightClicks">Right clicks: <span class="rightClicksNumber">0</span></div>
+  <div class="highscore">Highscore: <span class="highscoreNumber">0</span></div>
+</div>
+<div class="enterPlayer">
+  <div class="score">Your score: <span class="yourScore"></span><br>
+  Please enter your name.
+  </div>
+    <form name="newPlayer" method="post" action="/players/create">
+      <input type="text" name="playerName" placeholder="Playername" />
+      <input type="submit" value="Enter" onclick="return submitHighscore()"/>
+      <input type="hidden" name="highscore" value="0" />
+    </form>
+</div>
+<div class="container">
+  <div class="box firstBulb"></div>
+  <div class="box secondBulb"></div>
+  <div class="box thirdBulb"></div>
+  <div class="box fourthBulb"></div>
+</div>
+<button class="showHighscores">show highscores</button>
+<footer>Sound effects and music obtained from
+  <a href="https://www.zapsplat.com">https://www.zapsplat.com</a>
+</footer>
+<script src="{{ url_for('static', filename='js/js.js') }}"></script>
+</body>
+</html>

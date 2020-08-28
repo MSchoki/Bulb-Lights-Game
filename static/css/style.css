@@ -1,0 +1,106 @@
+body {
+  text-align: center;
+  background-color: skyblue;
+  font-family: "Impact", "Monospace";
+}
+
+h1 {
+  font-family: 'Bangers', cursive;
+  font-size: 40pt;
+  text-shadow: 3px 3px 4px #777;
+  color: white;
+}
+
+.menu {
+  font-size: 20pt;
+  display: inline-block;
+}
+
+button {
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: block;
+  font-size: 20pt;
+  font-family: "Impact", "Monospace";
+  text-align: center;
+}
+
+.rightClicks {
+  display: inline-block;
+  margin: 20px 20px;
+}
+
+.highscore {
+  display: inline-block;
+  margin: 20px 20px;
+
+}
+
+.container {
+  position: relative;
+  border: 5px solid blue;
+  margin: 20px auto;
+  width: 40%;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr ;
+}
+
+.box {
+  position: relative;
+  border: 3px solid dimgray;
+  height: 0;
+  padding-bottom: 100%;
+  background-size: cover;
+  background-image: url("bulb-white.svg");
+}
+
+.enterPlayer {
+    position: fixed;
+    left: 33%;
+    width: 400px;
+    height: 200px;
+    border: 2px solid blue;
+    background-color: #f9f6b9;
+    z-index: 1;
+    font-size: 20pt;
+    display: none;
+}
+
+.score {
+    margin: 20px;
+}
+
+form {
+margin-top: 20px;
+}
+
+footer {
+  position: relative;
+  font-size: 10pt;
+  font-family: "Arial", "Monospace";
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  margin-top: 30px;
+  background-color: lightgray;
+  text-align: center;
+}
+
+.highscoreBox {
+width: 200px;
+margin: 0 auto;
+}
+
+li {
+text-align: left;
+}
+
+span {
+margin-left: 20px;
+}
+
+.backButton {
+margin-top: 50px;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>highscores</title>
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body>
+<h1>Highscores</h1>
+<div class="highscoreBox">
+    <ol id="data">
+        {% for d in data %}
+        <li><strong>{{ d.highscore}}</strong> <span>{{d.name}}</span></li>
+        {% endfor %}
+    </ol>
+    <button class="backButton">back</button>
+</div>
+<script src="{{ url_for('static', filename='js/scores.js') }}"></script>
+</body>
+</html>
